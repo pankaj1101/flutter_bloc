@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sample/bloc/counter_bloc/counter_bloc.dart';
+import 'package:sample/bloc/favourite_app/favourite_app_bloc.dart';
 import 'package:sample/bloc/list_example/list_example_bloc.dart';
 import 'package:sample/bloc/registration/registration_bloc.dart';
 import 'package:sample/bloc/sample/sample_bloc.dart';
-import 'package:sample/ui/list_example.dart';
+import 'package:sample/ui/favourite_app_sreen.dart';
 import 'package:sample/utils/image_picker_utils.dart';
 
 void main() {
@@ -23,9 +24,11 @@ class MyApp extends StatelessWidget {
         BlocProvider<SampleBloc>(
             create: (context) => SampleBloc(ImagePickerUtis())),
         BlocProvider<ListExampleBloc>(create: (context) => ListExampleBloc()),
+        BlocProvider<FavouriteAppBloc>(create: (context) => FavouriteAppBloc()),
       ],
       child: const MaterialApp(
-        home: ListExample(),
+        debugShowCheckedModeBanner: false,
+        home: FavouriteAppScreen(),
       ),
     );
   }
