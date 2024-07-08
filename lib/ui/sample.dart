@@ -25,18 +25,9 @@ class Sample extends StatelessWidget {
                 ),
               );
             } else {
-              return Container(
-                width: 100,
-                height: 100,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                ),
-                child: CircleAvatar(
-                  child: Image.file(
-                    File(state.file!.path.toString()),
-                    fit: BoxFit.fill,
-                  ),
-                ),
+              return Image.file(
+                File(state.file!.path.toString()),
+                fit: BoxFit.fill,
               );
             }
           },
