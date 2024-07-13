@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sample/bloc/posts/posts_bloc.dart';
-import 'package:sample/model/post_model.dart';
 import 'package:sample/utils/enums.dart';
 
 class PostsScreen extends StatefulWidget {

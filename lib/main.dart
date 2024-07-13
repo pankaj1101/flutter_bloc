@@ -6,7 +6,6 @@ import 'package:sample/bloc/list_example/list_example_bloc.dart';
 import 'package:sample/bloc/posts/posts_bloc.dart';
 import 'package:sample/bloc/registration/registration_bloc.dart';
 import 'package:sample/bloc/sample/sample_bloc.dart';
-import 'package:sample/ui/favourite_app_sreen.dart';
 import 'package:sample/ui/post_screen.dart';
 import 'package:sample/utils/image_picker_utils.dart';
 
