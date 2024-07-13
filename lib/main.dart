@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
         BlocProvider<PostsBloc>(create: (context) => PostsBloc()),
       ],
       child: const MaterialApp(
+        themeMode: ThemeMode.dark,
         debugShowCheckedModeBanner: false,
         home: PostsScreen(),
       ),
