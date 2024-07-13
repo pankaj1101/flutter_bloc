@@ -7,7 +7,6 @@ class FavouriteAppScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('Inside Build');
     return Scaffold(
       appBar: AppBar(
         title: const Text('Favourite App'),
@@ -23,8 +22,6 @@ class FavouriteAppScreen extends StatelessWidget {
       ),
       body: BlocBuilder<FavouriteAppBloc, FavouriteAppState>(
         builder: (context, state) {
-          print('Inside Bloc');
-
           state as FavouriteAppInitial;
 
           if (state.personList.isEmpty) {
